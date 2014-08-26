@@ -13,7 +13,7 @@
     "tape": "~2.13.2"
   },
   "scripts": {
-    "test": "node test.js"
+    "test": "browserify test.js | testling -x open"
   },
   "testling": {
     "files": "test.js",
