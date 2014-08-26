@@ -4,7 +4,7 @@
 
 [![experimental](http://badges.github.io/stability-badges/dist/experimental.svg)](http://github.com/badges/stability-badges)
 
-Uses an intermediary canvas node to grab the RGBA pixels of the given source, with an optional clipping region. Works on canvas, image, or video elements.
+Uses an intermediary canvas node to grab the RGBA pixels of the given source, with an optional clipping region. Works on HTML Canvas, Image, and Video elements.
 
 ```js
 var getPixels = require('get-image-pixels')
