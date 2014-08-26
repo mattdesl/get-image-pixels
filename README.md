@@ -27,7 +27,7 @@ console.log( data.length === (halfWidth * myImage.height * 4) ) //true
 
 ### `getPixels(image[, opts])`
 
-Gets the RGBA pixels as a Uint8Array with some optional parameters.
+Gets the RGBA pixels from HTML Image/Video/Canvas element as a Uint8Array with some optional parameters.
 
 - `x` the x position to start clipping, default 0
 - `y` the y position to start clipping, default 0
