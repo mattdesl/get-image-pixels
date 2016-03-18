@@ -17,7 +17,15 @@ module.exports = function(image, opts) {
     canvas.height = opts.height
     context.clearRect(0,0,opts.width,opts.height)
     context.drawImage(image, opts.x, opts.y, opts.width, opts.height, 0, 0, opts.width, opts.height)
-    var imgData = context.getImageData(0, 0, opts.width, opts.height)
+
+    var imgData
+    try {
+        imgData = context.getImageData(0, 0, opts.width, opts.height)
+    } catch(e){
+        module.exports.dispose()
+        throw e
+    }
+
     return imgData.data
 }
 
