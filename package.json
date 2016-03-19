@@ -1,6 +1,6 @@
 {
   "name": "get-image-pixels",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "gets a RGBA array of the given Image/Video source",
   "main": "index.js",
   "license": "MIT",
